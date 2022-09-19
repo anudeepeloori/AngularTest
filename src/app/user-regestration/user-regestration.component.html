@@ -1,0 +1,21 @@
+<h3 class="text-center mt-3 text-danger">User Regestration Form</h3>
+<div class=" mx-auto m-5" style="max-width:700px;">
+    <form class="justify-content-center" #ref="ngForm" (ngSubmit)="addUserData()" >
+        <div class="mt-3">
+            <label for="un">Username</label>
+            <input type="text" name="username" id="un" class="form-control w-50" placeholder="ex : anudeep_123" [(ngModel)]="userObj.username">
+        </div>
+
+        <div class="mt-3">
+            <label for="dob">DOB</label>
+            <input type="date" name="Dateofbirth" id="dob" class="form-control w-50" [(ngModel)]="userObj.dob">
+        </div>
+
+        <div class="mt-3">
+            <label for="em">Email</label>
+            <input type="text" name="Email" id="em" class="form-control w-50" [(ngModel)]="userObj.email" >
+        </div>
+
+        <button type="submit" class="btn btn-danger mt-3">Submit</button>
+    </form>
+</div>

@@ -1,8 +1,15 @@
-<h4 class="text-center text-danger">Products Sent : {{productCount}}</h4>
-<h3 *ngFor="let prodid of productsSentByChild">{{prodid}}</h3>
-<div class="container row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-5 mb-5 ">
-    <div class="col" *ngFor="let prodObj of products">
-        <app-product-details [productObj]=prodObj (myEvent)="getProductDetailsFromChild($event)"></app-product-details>
-    </div>
+<ul class="nav nav-pills justify-content-evenly mt-3">
+    <li class="nav-item">
+      <a class="nav-link "  routerLink="mobiles" routerLinkActive="active">Mobiles</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="bikes" routerLinkActive="active">Bikes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="televisions" routerLinkActive="active">Televisions</a>
+    </li>
+  </ul>
 
-</div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>

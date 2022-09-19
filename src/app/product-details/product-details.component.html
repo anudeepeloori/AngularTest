@@ -3,7 +3,8 @@
     <img class="card-img-top" src="{{productObj?.productImage}}" alt="Card image cap" height="200px">
     <div class="card-body">
       <h5 class="card-title">{{productObj?.productTitle}}</h5>
-      <p class="card-text">{{productObj?.description}}</p>
+      <h5 class="card-title">{{productObj?.productBrand}}</h5>
+      <h4 class="card-text">{{productObj?.productPrice}}</h4>
       <button href="#" class="btn btn-primary" (click)="sendProductDetailsToParent(productObj?.productTitle)"> Add </button>
     </div>
 </div>
